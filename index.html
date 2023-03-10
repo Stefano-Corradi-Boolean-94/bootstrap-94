@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Bootstrap  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+
+  <style>
+
+    body{
+      padding-bottom: 200px;
+    }
+
+    [class^='container'],[class^='col'],.sc-container{
+      background-color:rgba(95, 158, 160, 0.22);
+      border: 1px solid #000;
+      min-height: 80px;
+    }
+
+    p{
+      text-align: justify;
+    }
+
+    .sc-container{
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+  </style>
+ 
+  <title>Bootstrap</title>
+</head>
+<body>
+
+  <h1>Ciao Bootsrap</h1>
+
+  <div class="container my-3">
+    <h3>container</h3>
+  </div>
+  <div class="container-fluid my-3">
+    <h3>container-fluid</h3>
+  </div>  
+  <div class="container-sm my-3">
+    <h3>container-sm (default)</h3>
+  </div>
+  <div class="container-md my-3">
+    <h3>container-md</h3>
+  </div>
+  <div class="container-lg my-3">
+    <h3>container-lg</h3>
+  </div>
+  <div class="container-xl my-3">
+    <h3>container-xl</h3>
+  </div>
+  <div class="container-xxl my-3">
+    <h3>container-xxl</h3>
+  </div>
+  
+  <!-- numero di colonne elastico  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+  </div>
+
+  <!-- dimensione colonne fissata in tutte le risoluzioni  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-2">col-2</div>
+      <div class="col-8">col-8</div>
+      <div class="col-2">col-2</div>
+    </div>
+  </div>
+
+  <!-- dimensione colonne responsive  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-sm-4 col-lg-2 col-xxl-1">col-sm-4 col-lg-2  col-xxl-1</div>
+      <div class="col-sm-4 col-lg-8 col-xxl-10">col-sm-4 col-lg-8  col-xxl-10</div>
+      <div class="col-sm-4 col-lg-2 col-xxl-1">col-sm-4 col-lg-2  col-xxl-1</div>
+    </div>
+  </div>
+
+  <!-- dimensione colonne responsive con default non 100%  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-6 col-md-4">col-6 col-md-4</div>
+      <div class="col-6 col-md-8">col-6 col-md-8</div>
+    </div>
+  </div>
+
+  <!-- offset fisso  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-6">col-6</div>
+      <div class="col-4 offset-2">col-4 offset-2</div>
+    </div>
+  </div>
+
+  <!-- offset responsice  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-6">col-6</div>
+      <div class="col-6 col-lg-4 offset-lg-2">col-6 col-lg-4 offset-lg-2</div>
+    </div>
+  </div>
+
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolore in cumque excepturi molestiae. Dolorem quod veniam nostrum est laudantium, a voluptate cumque optio hic necessitatibus minus quisquam officiis ea.</p>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolore in cumque excepturi molestiae. Dolorem quod veniam nostrum est laudantium, a voluptate cumque optio hic necessitatibus minus quisquam officiis ea.</p>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolore in cumque excepturi molestiae. Dolorem quod veniam nostrum est laudantium, a voluptate cumque optio hic necessitatibus minus quisquam officiis ea.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- colonne senza padding  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-4 p-0">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolore in cumque excepturi molestiae. Dolorem quod veniam nostrum est laudantium, a voluptate cumque optio hic necessitatibus minus quisquam officiis ea.</p>
+      </div>
+      <div class="col-4 p-0">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolore in cumque excepturi molestiae. Dolorem quod veniam nostrum est laudantium, a voluptate cumque optio hic necessitatibus minus quisquam officiis ea.</p>
+      </div>
+      <div class="col-4 p-0">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolore in cumque excepturi molestiae. Dolorem quod veniam nostrum est laudantium, a voluptate cumque optio hic necessitatibus minus quisquam officiis ea.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-2 row-cols-xl-4">
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+
+  <!-- nesting  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-8">
+        <!-- greare una row all'interno di una col  -->
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- container custom  -->
+  <div class="sc-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-8"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- gestione display in base alla risoluzione  -->
+  <div class="container my-3">
+    <div class="row">
+      <div class="col-11 col-lg-6">logo</div>
+      <div class="col-1 d-lg-none">H</div>
+      <div class="col-6 d-none d-lg-block ">MENU</div>
+    </div>
+  </div>
+
+</body>
+</html>
